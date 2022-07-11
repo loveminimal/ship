@@ -3,10 +3,20 @@ let scInput = document.querySelector('#sc-input');
 let scVal = '';
 let eby = document.querySelector('#by');
 let ebd = document.querySelector('#bd');
-let cur = document.querySelector('#by');
+let cur;
 
-scInput.focus();
-scClear.style = 'opacity: 0;'
+init();
+
+function init() {
+	scInput.focus();
+	scClear.style = 'opacity: 0;'
+	cur = document.querySelector('#by');
+	
+	let curId = localStorage.getItem('curId')
+	if (curId) cur = document.querySelector(curId);
+	
+	cur.className = 'activated';
+}
 
 function search (e) {
 	if (e && e.keyCode !== 13) return;
@@ -16,8 +26,9 @@ function search (e) {
 }
 
 function select(e) {
-	let _id = e.target.id;
-	cur = document.querySelector('#' + _id);
+	let _id = '#' + e.target.id;
+	cur = document.querySelector(_id);
+	localStorage.setItem('curId', _id)
 
 	eby.className = '';
 	ebd.className = '';
