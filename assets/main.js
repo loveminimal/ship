@@ -43,6 +43,8 @@ function search (e) {
 
 function select(e) {
 	let _id = '#' + e.target.id;
+	if (_id === '#engine') return;
+	
 	cur = document.querySelector(_id);
 	localStorage.setItem('curId', _id)
 
