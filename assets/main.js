@@ -3,7 +3,7 @@ let scInput = document.querySelector('#sc-input');
 let scVal = '';
 let eby = document.querySelector('#by');
 let ebd = document.querySelector('#bd');
-let cur;
+let cur = document.querySelector('#by');
 
 scInput.focus();
 scClear.style = 'opacity: 0;'
