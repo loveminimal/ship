@@ -1,23 +1,23 @@
 let scClear = document.querySelector('#sc-clear');
 let scInput = document.querySelector('#sc-input');
 let scVal = '';
+
 let eby = document.querySelector('#by');
 let ebd = document.querySelector('#bd');
 let cur;
+let defaultId = '#' + config.engine;
 
 let nav = document.querySelector('#nav')
 
-let defaultId = '#' + config.engine;
 
 init();
 
 function init() {
 	scInput.focus();
 	scClear.style = 'opacity: 0;'
-	cur = document.querySelector('#by');
 	
 	let curId = localStorage.getItem('curId')
-	if (curId) cur = document.querySelector(curId);
+	cur = curId ? document.querySelector(curId) : document.querySelector(defaultId);
 
 	cur.className = 'activated';
 
