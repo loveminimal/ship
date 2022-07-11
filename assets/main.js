@@ -4,6 +4,7 @@ let scVal = '';
 
 let eby = document.querySelector('#by');
 let ebd = document.querySelector('#bd');
+let ego = document.querySelector('#go');
 let cur;
 let defaultId = '#' + config.engine;
 
@@ -37,7 +38,16 @@ function initNav() {
 function search (e) {
 	if (e && e.keyCode !== 13) return;
 
-	let _eg = cur.id === 'by' ? 'https://cn.bing.com/search?q=' : 'https://baidu.com/s?wd='
+	let _eg;
+
+	if (cur.id === 'by') {
+		_eg = 'https://cn.bing.com/search?q='
+	} else if (cur.id === 'bd') {
+		_eg = 'https://baidu.com/s?wd='
+	} else if (cur.id === 'go') {
+		_eg = 'https://google.com/search?q='
+	}
+
 	window.open(_eg + scVal)
 }
 
@@ -50,6 +60,8 @@ function select(e) {
 
 	eby.className = '';
 	ebd.className = '';
+	ego.className = '';
+	
 
 	cur.className = 'activated';
 	if (scVal) search();
@@ -64,4 +76,5 @@ function clearVal() {
 function reactive() {
     scVal = scInput.value.trim();
     scClear.style = scVal ? 'opacity: 1' : 'opacity: 0';
+	scInput.focus();
 }

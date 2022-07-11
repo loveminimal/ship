@@ -2,7 +2,7 @@ const config = {
 	// Set default engine, includes
 	// - by: bing
 	// - bd: baidu
-	engine: 'by',	
+	engine: 'by',
 	// Set frequents nav
 	nav: {
 		Virgo: '//ovirgo.com',
