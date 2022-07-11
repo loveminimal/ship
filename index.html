@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ship</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-ship">
+		<div class="header">
+			<div class="title">🚀 Ship Go</div>
+		</div>
+
+		<div class="content">
+			<!-- <input type="text" /> -->
+			<div id="search">
+				<!-- 🔎 -->
+				<!-- <span class="sc-icon"><img src="/imgs/icons/search.svg" width="48"> </span> -->
+				<input id="sc-input" onkeypress="search(event)" oninput="reactive()" type="text" placeholder="here search search..." />
+				<span id="sc-clear" onclick="clearVal()">&nbsp;✖</span>
+			</div>
+
+			<div id="engine" onclick="select(event)">
+				<span id="by" class="activated">Bing</span>
+				<span id="bd">Baidu</span>
+			</div>
+		</div>
+
+		<!-- <div class="footer">
+			go where you want to go
+		</div> -->
+	</div>
+	<script src="main.js" defer></script>
+</body>
+</html>

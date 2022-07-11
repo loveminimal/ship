@@ -1,0 +1,116 @@
+@import url(taobao.css);
+
+html {
+	font-size: 100px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+.container-ship {
+	box-sizing: border-box;
+
+    border-top: 4px solid;
+    border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
+    border-image-slice: 1;
+    -webkit-border-top: 4px solid;
+    -webkit-border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
+    -webkit-border-image-slice: 1;
+
+	min-height: 100%;
+	text-align: center;
+	font-family: Jost;
+	font-size: .16rem;
+	padding: 64px 0;
+}
+
+
+
+.header {
+	/* background: #fcc; */
+	padding: 32px 0;
+	font-size: .24rem;
+}
+
+.content #search {
+	padding: 32px 0;
+	position: relative;
+}
+
+.content #search #sc-clear {
+	cursor: pointer;
+	transition: .5s opacity ease;
+	position: absolute;
+}
+
+
+.content #search #sc-input {
+	text-align: center;
+	font-family: Jost, kaiti;
+	color: #333;
+	outline-style: none;
+	border: 0px;
+	border-bottom: 1px solid #0d6efd;
+	padding: 12px 0;
+	padding-left: 32px;
+	max-width: 500px;
+	min-width: 260px;
+	/* background: rgba(255, 255, 255, 0); */
+}
+
+.content #search #sc-input:focus {
+	border-color: #0dcaf0;
+}
+
+.content #search #sc-input::placeholder {
+	color: rgba(0, 0, 0, .3);
+	font-family: 'Segoe script';
+}
+
+.content #engine {
+	/* background: #eef; */
+	padding: 16px 0;
+}
+
+.content #engine .activated {
+	background: #ccc;
+}
+
+.content #engine span {
+	cursor: pointer;
+	display: inline-block;
+	background: #eee;
+	padding: 2px 4px;
+	border-radius: 4px;
+	width: 64px;
+}
+
+.content #engine span:hover {
+	box-shadow: 0 0 3px #666;
+}
+
+
+
+.footer {
+	background: #cfc;
+	/* font-family: 'Segoe script'; */
+	color: #aaa;
+	padding: 64px 0;
+
+}
+
+@font-face {
+	font-family: Jost;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src:
+	  local("Jost Regular Regular"),
+	  local("Jost-Regular"), 
+	  local("Jost* Book"),
+	  local("Jost-Book"),
+	  url("fonts/jost/jost-v4-latin-regular.woff2") format("woff2"),
+	  url("fonts/jost/jost-v4-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
