@@ -8,6 +8,7 @@ const config = {
 		Virgo: '//ovirgo.com',
 		Nav: '//ovirgo.com/nav',
 		Github: '//github.com/loveminimal',
-		Youtube: '//youtube.com'
+		Youtube: '//youtube.com',
+		Bilibili: '//bilibili.com'
 	}
 }
