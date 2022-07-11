@@ -34,6 +34,10 @@ body {
 	font-size: .24rem;
 }
 
+.content {
+	position: relative;
+}
+
 .content #search {
 	padding: 32px 0;
 	position: relative;
@@ -43,6 +47,7 @@ body {
 	cursor: pointer;
 	transition: .5s opacity ease;
 	position: absolute;
+	top: 45px;
 }
 
 
@@ -54,7 +59,7 @@ body {
 	border: 0px;
 	border-bottom: 1px solid #0d6efd;
 	padding: 12px 0;
-	padding-left: 32px;
+	/* padding-left: 32px; */
 	max-width: 500px;
 	min-width: 260px;
 	/* background: rgba(255, 255, 255, 0); */
