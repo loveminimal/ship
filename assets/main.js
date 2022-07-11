@@ -5,6 +5,10 @@ let eby = document.querySelector('#by');
 let ebd = document.querySelector('#bd');
 let cur;
 
+let nav = document.querySelector('#nav')
+
+let defaultId = '#' + config.engine;
+
 init();
 
 function init() {
@@ -14,8 +18,20 @@ function init() {
 	
 	let curId = localStorage.getItem('curId')
 	if (curId) cur = document.querySelector(curId);
-	
+
 	cur.className = 'activated';
+
+	initNav();
+}
+
+function initNav() {
+	let _str = '';
+
+	Object.entries(config.nav).forEach(item => {
+		_str += `<a href=${item[1]}>${item[0]}</a>`
+	})
+
+	nav.innerHTML = _str;
 }
 
 function search (e) {
