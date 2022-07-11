@@ -11,6 +11,7 @@ It has a light configuration file - `config.js` , which allows you to set defaul
 const config = {
 	// Set default engine, includes
 	// - by: bing
+	// - go: google - a piece of 404 cloud
 	// - bd: baidu
 	engine: 'by',	
 	// Set frequents nav
@@ -18,7 +19,8 @@ const config = {
 		Virgo: '//ovirgo.com',
 		Nav: '//ovirgo.com/nav',
 		Github: '//github.com/loveminimal',
-		Youtube: '//youtube.com'
+		Youtube: '//youtube.com',
+		Bilibili: '//bilibili.com'
 	}
 }
 ```
