@@ -60,8 +60,9 @@ body {
 	border-bottom: 1px solid #0d6efd;
 	padding: 12px 0;
 	/* padding-left: 32px; */
-	max-width: 500px;
-	min-width: 260px;
+	/* max-width: 500px; */
+	/* min-width: 500px; */
+	width: 500px;
 	/* background: rgba(255, 255, 255, 0); */
 }
 
@@ -129,10 +130,17 @@ body {
 	font-weight: 400;
 	font-display: swap;
 	src:
-	  local("Jost Regular Regular"),
-	  local("Jost-Regular"), 
-	  local("Jost* Book"),
-	  local("Jost-Book"),
-	  url("../fonts/jost/jost-v4-latin-regular.woff2") format("woff2"),
-	  url("../fonts/jost/jost-v4-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+		local("Jost Regular Regular"),
+		local("Jost-Regular"), 
+		local("Jost* Book"),
+		local("Jost-Book"),
+		url("../fonts/jost/jost-v4-latin-regular.woff2") format("woff2"),
+		url("../fonts/jost/jost-v4-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@media screen and (max-width: 1026px) {
+	.content #search #sc-input {
+		max-width: 80%;
+		min-width: 260px;
+	}
+}
