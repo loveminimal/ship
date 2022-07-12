@@ -48,8 +48,8 @@ function search (e) {
 		_eg = 'https://google.com/search?q='
 	}
 
-	clearVal();
 	window.open(_eg + scVal)
+	clearVal();
 }
 
 function select(e) {
