@@ -38,6 +38,12 @@ function initNav() {
 function search (e) {
 	if (e && e.keyCode !== 13) return;
 
+	if (scVal.indexOf('http') === 0) {
+		window.open(scVal);
+		clearVal();
+		return;
+	}
+
 	let _eg;
 
 	if (cur.id === 'by') {
