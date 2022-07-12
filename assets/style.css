@@ -99,10 +99,12 @@ body {
 
 .content #nav {
 	/* background: #efe; */
-	padding: 32px 0;
+	padding: 32px 10%;
+	text-align: center;
 }
 
 .content #nav a {
+	display: inline-block;
 	color: #5d2f86;
 	margin: 4px;
 }
@@ -142,5 +144,8 @@ body {
 	.content #search #sc-input {
 		max-width: 80%;
 		min-width: 260px;
+	}
+
+	.content #nav {
 	}
 }
