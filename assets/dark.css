@@ -1,0 +1,27 @@
+.container-ship--dark {
+	background: #17202A;
+}
+
+.container-ship--dark .header {
+	color: #eee;
+}
+
+.container-ship--dark .content #nav a {
+	color: #AED6F1;
+}
+
+.container-ship--dark .content #search #sc-input {
+	color: #eee;
+	background: rgba(255, 255, 255, 0);
+	border-bottom: 1px solid #CACFD2;
+
+}
+
+.container-ship--dark .content #search #sc-input::placeholder {
+	color: rgba(239, 239, 239, .3);
+	font-family: 'Segoe script';
+}
+
+.container-ship--dark .content #search #sc-clear {
+	color: #AED6F1;
+}

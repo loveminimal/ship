@@ -1,4 +1,5 @@
 @import url(taobao.css);
+@import url(dark.css);
 
 html {
 	font-size: 100px;
@@ -32,6 +33,10 @@ body {
 	/* background: #fcc; */
 	padding: 32px 0;
 	font-size: .24rem;
+}
+
+.header .title {
+	cursor: pointer;
 }
 
 .content {

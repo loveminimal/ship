@@ -8,7 +8,9 @@ let ego = document.querySelector('#go');
 let cur;
 let defaultId = '#' + config.engine;
 
-let nav = document.querySelector('#nav')
+let nav = document.querySelector('#nav');
+let cship = document.querySelector('.container-ship');
+let title = document.querySelector('#title');
 
 
 init();
@@ -23,6 +25,7 @@ function init() {
 	cur.className = 'activated';
 
 	initNav();
+	initColor();
 }
 
 function initNav() {
@@ -84,4 +87,22 @@ function reactive() {
     scVal = scInput.value.trim();
     scClear.style = scVal ? 'opacity: 1' : 'opacity: 0';
 	scInput.focus();
+}
+
+
+function initColor() {
+	if (localStorage.getItem('dark')) {
+		cship.className = 'container-ship container-ship--dark';
+	}
+}
+
+function toggleColor() {
+	if (cship.className.indexOf('dark') > -1) {
+		cship.className = 'container-ship';
+		localStorage.removeItem('dark');
+
+	} else {
+		cship.className = 'container-ship container-ship--dark';
+		localStorage.setItem('dark', true);
+	}
 }
