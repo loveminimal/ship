@@ -12,6 +12,7 @@ let nav = document.querySelector('#nav');
 let cship = document.querySelector('.container-ship');
 let title = document.querySelector('#title');
 
+let urlRegexp = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/;
 
 init();
 
@@ -41,7 +42,9 @@ function initNav() {
 function search (e) {
 	if (e && e.keyCode !== 13) return;
 
-	if (scVal.indexOf('http') === 0) {
+	if (urlRegexp.test(scVal)) {
+		scVal = (scVal.indexOf('http') === 0) ? scVal : ('https://' + scVal)
+
 		window.open(scVal);
 		clearVal();
 		return;
