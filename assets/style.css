@@ -27,15 +27,12 @@ body {
 	padding: 64px 0;
 }
 
-
-
 .header {
-	/* background: #fcc; */
 	padding: 32px 0;
 	font-size: .24rem;
 }
 
-.header .title {
+.header .light-dark {
 	cursor: pointer;
 }
 

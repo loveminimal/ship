@@ -25,6 +25,8 @@ const config = {
 }
 ```
 
+And you can toggle light/dark mode by click the rocket icon.
+
 ## Screenshots
 
 Here is a screenshot:
@@ -32,3 +34,7 @@ Here is a screenshot:
 <img src="imgs/screenshot.jpg" width="" style="float: ;" />
 
 Just for fun. 🚀
+
+## Changelogs
+
+- 2022-07-15 17:45 [Added] Add dark mode.
