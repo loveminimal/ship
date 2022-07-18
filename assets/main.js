@@ -94,7 +94,7 @@ function reactive() {
 
 
 function initColor() {
-	if (localStorage.getItem('dark')) {
+	if (localStorage.getItem('dark') === 'on') {
 		cship.className = 'container-ship container-ship--dark';
 	}
 }
@@ -102,10 +102,22 @@ function initColor() {
 function toggleColor() {
 	if (cship.className.indexOf('dark') > -1) {
 		cship.className = 'container-ship';
-		localStorage.removeItem('dark');
+		setDarkOfLocalStorage('off');
 
 	} else {
 		cship.className = 'container-ship container-ship--dark';
-		localStorage.setItem('dark', true);
+		setDarkOfLocalStorage('on');
 	}
+}
+
+function getDarkOfLocalStorage() {
+    return localStorage.getItem('dark');
+}
+
+function setDarkOfLocalStorage(flag) {
+    localStorage.setItem('dark', flag);
+}
+
+function delDarkOfLocalStorage() {
+    localStorage.removeItem('dark');
 }
