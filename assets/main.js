@@ -61,7 +61,7 @@ function search (e) {
 	}
 
 	window.open(_eg + scVal)
-	clearVal();
+	// clearVal();	// 事实证明，需要重新选择引擎的频率挺高的
 }
 
 function select(e) {
