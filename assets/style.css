@@ -37,7 +37,7 @@ body {
 }
 
 .media a {
-	border-bottom-style: double;
+	/* border-bottom-style: double; */
 	/* border-bottom:1px solid #ccc; */
 	border-bottom-color: #ccc;
 }
