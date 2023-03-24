@@ -6,11 +6,13 @@ const config = {
 	engine: 'by',
 	// Set frequents nav
 	nav: {
-		Archive: '//ovirgo.com/archive',
+		Virgo: '//ovirgo.com',
 		Nav: '//ovirgo.com/nav',
+		Archive: '//ovirgo.com/archive',
+		Blog: '//ovirgo.com/posts',
 		// Github: '//github.com/loveminimal',
-		Bilibili: '//bilibili.com',
-		Youtube: '//youtube.com',
-		Twitter: '//twitter.com'
+		// Bilibili: '//bilibili.com',
+		// Youtube: '//youtube.com',
+		Mine: '//ovirgo.com/about'
 	}
 }

@@ -36,6 +36,18 @@ body {
 	cursor: pointer;
 }
 
+.media a {
+	border-bottom-style: double;
+	/* border-bottom:1px solid #ccc; */
+	border-bottom-color: #ccc;
+}
+
+.media a svg {
+	width: 20px;
+	height: 20px;
+	padding: 0;
+}
+
 .content {
 	position: relative;
 }

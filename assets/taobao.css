@@ -6,7 +6,7 @@ code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
 small{ font-size:12px; }
 /* ul, ol { list-style:none; } */
 a { text-decoration:none; }
-a:hover { text-decoration:underline; }
+a:hover { text-decoration:none; } /* underline */
 sup { vertical-align:text-top; }
 sub{ vertical-align:text-bottom; }
 legend { color:#000; }
