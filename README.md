@@ -1,7 +1,6 @@
 A simple search page, which includes bing and baidu. 🤩
 
-You can access it at [Ship Go](https://ovirgo.com/ship)
-
+You can access it at [Ship](https://loveminimal.github.io/ship/).
 
 ## Quick Start
 
