@@ -6,7 +6,7 @@ const config = {
 	engine: 'by',
 	// Set frequents nav
 	nav: {
-		Virgo: '//walkssi.com',
+		Walkssi: '//walkssi.com',
 		Nav: '//walkssi.com/nav',
 		Archive: '//walkssi.com/archive',
 		Blog: '//walkssi.com/posts',
