@@ -6,10 +6,10 @@ const config = {
 	engine: 'by',
 	// Set frequents nav
 	nav: {
-		Virgo: '//walkssi.com',
+		Walkssi: '//walkssi.com',
 		Nav: '//walkssi.com/nav',
-		Archive: '//walkssi.com/archive',
-		Blog: '//walkssi.com/posts',
+		// Archive: '//walkssi.com/archive',
+		// Blog: '//walkssi.com/posts',
 		// Github: '//github.com/loveminimal',
 		// Bilibili: '//bilibili.com',
 		// Youtube: '//youtube.com',
