@@ -13,6 +13,7 @@ const config = {
 		// Github: '//github.com/loveminimal',
 		// Bilibili: '//bilibili.com',
 		// Youtube: '//youtube.com',
-		Mine: '//walkssi.com/about'
+		Wiki: '//walkssi.com/wiki',
+		Mine: '//walkssi.com/about',
 	}
 }
