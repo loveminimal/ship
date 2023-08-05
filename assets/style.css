@@ -22,7 +22,7 @@ body {
 
 	min-height: 100%;
 	text-align: center;
-	font-family: Jost;
+	font-family: 'LXGW WenKai Screen', Jost;
 	font-size: .16rem;
 	padding: 64px 0;
 }
@@ -67,7 +67,7 @@ body {
 
 .content #search #sc-input {
 	text-align: center;
-	font-family: Jost, kaiti;
+	font-family: 'LXGW WenKai Screen', Jost, kaiti;
 	color: #333;
 	outline-style: none;
 	border: 0px;
@@ -86,7 +86,7 @@ body {
 
 .content #search #sc-input::placeholder {
 	color: rgba(0, 0, 0, .3);
-	font-family: 'Segoe script';
+	font-family: 'Segoe script', 'LXGW WenKai Screen';
 }
 
 .content #engine {
@@ -140,7 +140,7 @@ body {
 
 }
 
-@font-face {
+/* @font-face {
 	font-family: Jost;
 	font-style: normal;
 	font-weight: 400;
@@ -151,8 +151,8 @@ body {
 		local("Jost* Book"),
 		local("Jost-Book"),
 		url("../fonts/jost/jost-v4-latin-regular.woff2") format("woff2"),
-		url("../fonts/jost/jost-v4-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+		url("../fonts/jost/jost-v4-latin-regular.woff") format("woff");
+} */
 
 @media screen and (max-width: 1026px) {
 	.content #search #sc-input {
