@@ -15,5 +15,6 @@ const config = {
 		// Youtube: '//youtube.com',
 		Wiki: '//walkssi.com/wiki',
 		Mine: '//walkssi.com/about',
+		'🥳':'//walkssi.com/emojing',
 	}
 }
