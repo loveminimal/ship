@@ -1,3 +1,4 @@
+const baseURL = 'aituyaa.com';
 const config = {
 	// Set default engine, includes
 	// - by: bing
@@ -6,15 +7,10 @@ const config = {
 	engine: 'by',
 	// Set frequents nav
 	nav: {
-		Walkssi: '//walkssi.com',
-		Nav: '//walkssi.com/nav',
-		// Archive: '//walkssi.com/archive',
-		// Blog: '//walkssi.com/posts',
-		// Github: '//github.com/loveminimal',
-		// Bilibili: '//bilibili.com',
-		// Youtube: '//youtube.com',
-		Wiki: '//walkssi.com/wiki',
-		Mine: '//walkssi.com/about',
-		'🥳':'//walkssi.com/emojing',
+		Aituyaa: `//${baseURL}`,
+		Nav: `//${baseURL}/nav`,
+		Wiki: `//${baseURL}/wiki`,
+		Mine: `//${baseURL}/about`,
+		':-)':`//${baseURL}/emojing`,
 	}
 }
